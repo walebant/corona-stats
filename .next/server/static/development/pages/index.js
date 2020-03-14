@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _useCountryStats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useCountryStats */ "./components/useCountryStats.js");
 /* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
-var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/first-app/components/CountryStat.js";
+var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/CountryStat.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -173,6 +173,64 @@ function CountryStat() {
 
 /***/ }),
 
+/***/ "./components/Footer.js":
+/*!******************************!*\
+  !*** ./components/Footer.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Footer.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function Footer() {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("p", {
+    style: {
+      textAlign: 'center',
+      fontSize: '1.5em'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "\uD83E\uDDFC\uD83D\uDC50\uD83D\uDEB0 \uD83D\uDEAB \uD83E\uDDA0"), __jsx("p", {
+    style: {
+      textAlign: 'right',
+      color: 'green'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "by", __jsx("a", {
+    target: "__blank",
+    href: "https://twitter.com/wale_bant",
+    style: {
+      textAlign: 'right'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "@wale_bant")));
+}
+
+/***/ }),
+
 /***/ "./components/Global.js":
 /*!******************************!*\
   !*** ./components/Global.js ***!
@@ -185,7 +243,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Global; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/first-app/components/Global.js";
+var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Global.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const styles = {
@@ -274,7 +332,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/first-app/components/Header.js";
+var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -334,9 +392,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/first-app/components/MyLayout.js";
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
+var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/MyLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 const layoutStyle = {
   margin: 20,
@@ -348,16 +408,22 @@ function Layout(props) {
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
-  }), props.children);
+  }), props.children, __jsx(_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }));
 }
 
 /***/ }),
@@ -2167,7 +2233,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_useStats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/useStats */ "./components/useStats.js");
 /* harmony import */ var _components_CountryStat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/CountryStat */ "./components/CountryStat.js");
 /* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
-var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/first-app/pages/index.js";
+var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2217,7 +2283,7 @@ function Index() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/icode/Codebase/Personal/Nextjs/first-app/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /home/icode/Codebase/Personal/Nextjs/corona-stats/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
