@@ -1,7 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { Statistic, Card, Row, Col, Select } from 'antd';
+import { ArrowUpOutlined } from '@ant-design/icons';
 import useCountryStats from './useCountryStats';
 import useStats from './useStats';
+import Loading from './Loading';
 
+const { Option } = Select;
+
+console.log(Select);
 export default function CountryStat() {
   const [seleceted, setSeleceted] = useState('NG');
   const { loading, error, stats } = useStats(
@@ -9,22 +15,60 @@ export default function CountryStat() {
   );
   const { countryStats } = useCountryStats(seleceted);
 
-  const handleChange = e => setSeleceted(e.target.value);
+  const handleChange = value => setSeleceted(value);
 
   return (
-    <div>
-      <select onChange={handleChange} value={seleceted}>
+    <div style={{ marginTop: '2em', textAlign: 'center' }}>
+      <label>Stats for: </label>
+      <Select
+        defaultValue={seleceted}
+        style={{ width: 200 }}
+        onChange={handleChange}
+      >
         {stats?.countries &&
           Object.entries(stats.countries).map((country, i) => (
-            <option value={country[1]} key={i}>
+            <Option value={country[1]} key={i}>
               {country[0]}
-            </option>
+            </Option>
           ))}
-      </select>
+      </Select>
 
-      <p>Confirmed: {countryStats.confirmed.value}</p>
-      <p>Recovered: {countryStats.recovered.value}</p>
-      <p>Deaths: {countryStats.deaths.value}</p>
+      {loading || (!countryStats && <Loading />)}
+
+      {countryStats && (
+        <Row gutter={32} style={{ marginTop: '1em' }}>
+          <Col span={8}>
+            <Card>
+              <Statistic
+                title="Confirmed"
+                value={countryStats.confirmed?.value}
+                valueStyle={{ color: '#c38755' }}
+              />
+            </Card>
+          </Col>
+
+          <Col span={8}>
+            <Card>
+              <Statistic
+                title="Recovered"
+                value={countryStats.recovered?.value}
+                valueStyle={{ color: '#3f8600' }}
+              />
+            </Card>
+          </Col>
+
+          <Col span={8}>
+            <Card>
+              <Statistic
+                title="Deaths"
+                value={countryStats.deaths?.value}
+                valueStyle={{ color: '#cf1322' }}
+              />
+            </Card>
+          </Col>
+        </Row>
+      )}
+      {error && <h1>{error}</h1>}
     </div>
   );
 }

@@ -1,0 +1,1 @@
+{"ast":null,"code":"import '../components/App.scss';","map":{"version":3,"sources":["/home/icode/Codebase/Personal/Nextjs/corona-stats/pages/_app.js"],"names":[],"mappings":"AAAA,OAAO,wBAAP","sourcesContent":["import '../components/App.scss';\n"]},"metadata":{},"sourceType":"module"}
