@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Statistic, Card, Row, Col, Select, Spin } from 'antd';
+import { Statistic, Card, Row, Col, Select, Spin, Typography } from 'antd';
 import useCountryStats from './useCountryStats';
 import useStats from './useStats';
 
+const { Title } = Typography;
 const { Option } = Select;
 
 export default function CountryStat() {
@@ -16,7 +17,9 @@ export default function CountryStat() {
 
   return (
     <div style={{ marginTop: '2em', textAlign: 'center' }}>
-      <label>Stats for: </label>
+      <Title level={4} style={{ textAlign: 'center' }}>
+        Stats for
+      </Title>
       <Select
         defaultValue={seleceted}
         style={{ width: 200 }}

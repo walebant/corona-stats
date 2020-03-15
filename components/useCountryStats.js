@@ -3,11 +3,7 @@ import { useState, useEffect } from 'react';
 export default function useCountryStats(selected) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [countryStats, setCountryStats] = useState({
-    confirmed: { value: 22 },
-    recovered: { value: 22 },
-    deaths: { value: 22 },
-  });
+  const [countryStats, setCountryStats] = useState();
 
   useEffect(() => {
     async function fetchData() {

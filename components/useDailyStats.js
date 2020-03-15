@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react';
 export default function useDailyStats(url) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [stats, setStats] = useState({
-    confirmed: { value: 22 },
-    recovered: { value: 22 },
-    deaths: { value: 22 },
-  });
+  const [stats, setStats] = useState();
+
+  const dayNow = new Date().getDate();
+  const month = new Date().getMonth() + 1;
+  const dateNow = `2020/0${month}/${dayNow}`;
 
   useEffect(() => {
     async function fetchData() {
@@ -16,13 +16,19 @@ export default function useDailyStats(url) {
       const data = await fetch(url)
         .then(res => res.json())
         .catch(err => setError(err));
-      setStats(data);
+
+      data.map(day => {
+        if (day.reportDateString === dateNow) {
+          setStats(day);
+        }
+      });
       setLoading(false);
     }
 
     fetchData();
     return () => {};
-  }, [url]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return { loading, error, stats };
 }

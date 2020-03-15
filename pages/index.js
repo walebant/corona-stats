@@ -12,11 +12,11 @@ export default function Index() {
   const { loading, error, stats } = useStats('https://covid19.mathdro.id/api/');
   return (
     <Layout>
-      <Title level={3} style={{ textAlign: 'center' }}>
+      <Title level={4} style={{ textAlign: 'center' }}>
         COVID-19 Global Stats
       </Title>
       <Global stats={stats} loading={loading} />
-      {/* <DailySummary /> */}
+      <DailySummary />
       <CountryStat />
 
       <style jsx="true" global>{`

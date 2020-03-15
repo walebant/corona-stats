@@ -12,7 +12,7 @@ export default function Global({ stats, loading }) {
         <Card>
           <Statistic
             title="Confirmed"
-            value={stats.confirmed.value}
+            value={stats?.confirmed?.value}
             valueStyle={{ color: '#c38755' }}
           />
         </Card>
@@ -22,7 +22,7 @@ export default function Global({ stats, loading }) {
         <Card>
           <Statistic
             title="Recovered"
-            value={stats.recovered.value}
+            value={stats?.recovered?.value}
             valueStyle={{ color: '#3f8600' }}
           />
         </Card>
@@ -32,7 +32,7 @@ export default function Global({ stats, loading }) {
         <Card>
           <Statistic
             title="Deaths"
-            value={stats.deaths.value}
+            value={stats?.deaths?.value}
             valueStyle={{ color: '#cf1322' }}
           />
         </Card>

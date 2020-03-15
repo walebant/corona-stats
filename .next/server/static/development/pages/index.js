@@ -127,10 +127,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var antd_lib_select__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/select */ "antd/lib/select");
 /* harmony import */ var antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_select__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _useCountryStats__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./useCountryStats */ "./components/useCountryStats.js");
-/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _useCountryStats__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./useCountryStats */ "./components/useCountryStats.js");
+/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
+
+
 
 
 
@@ -144,10 +150,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/CountryStat.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement;
 
 
 
+const {
+  Title
+} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_13___default.a;
 const {
   Option
 } = antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default.a;
@@ -157,15 +166,15 @@ function CountryStat() {
   const {
     0: seleceted,
     1: setSeleceted
-  } = Object(react__WEBPACK_IMPORTED_MODULE_12__["useState"])('NG');
+  } = Object(react__WEBPACK_IMPORTED_MODULE_14__["useState"])('NG');
   const {
     loading,
     error,
     stats
-  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_14__["default"])('https://covid19.mathdro.id/api/countries');
+  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_16__["default"])('https://covid19.mathdro.id/api/countries');
   const {
     countryStats
-  } = Object(_useCountryStats__WEBPACK_IMPORTED_MODULE_13__["default"])(seleceted);
+  } = Object(_useCountryStats__WEBPACK_IMPORTED_MODULE_15__["default"])(seleceted);
 
   const handleChange = value => setSeleceted(value);
 
@@ -176,16 +185,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, __jsx("label", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, "Stats for: "), __jsx(antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default.a, {
+  }, __jsx(Title, {
+    level: 4,
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "Stats for"), __jsx(antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default.a, {
     defaultValue: seleceted,
     style: {
       width: 200
@@ -193,7 +206,7 @@ function CountryStat() {
     onChange: handleChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
     },
     __self: this
   }, (stats === null || stats === void 0 ? void 0 : stats.countries) && Object.entries(stats.countries).map((country, i) => __jsx(Option, {
@@ -201,14 +214,14 @@ function CountryStat() {
     key: i,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 30
     },
     __self: this
   }, country[0]))), loading || !countryStats && __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
     size: "large",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 36
     },
     __self: this
   }), countryStats && __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -218,20 +231,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 41
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -242,20 +255,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 42
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 50
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -266,20 +279,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 52
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 60
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 61
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -290,13 +303,13 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 62
     },
     __self: this
   })))), error && __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 71
     },
     __self: this
   }, error));
@@ -334,9 +347,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/spin */ "antd/lib/spin");
 /* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _useDailyStats__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./useDailyStats */ "./components/useDailyStats.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _useDailyStats__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./useDailyStats */ "./components/useDailyStats.js");
+
+
 
 
 
@@ -348,98 +367,127 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/DailySummary.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement;
 
 
+const {
+  Title
+} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default.a;
 function DailySummary() {
-  const {
-    0: dailyStats,
-    1: setDailyStats
-  } = Object(react__WEBPACK_IMPORTED_MODULE_10__["useState"])();
   const {
     loading,
     error,
     stats
-  } = Object(_useDailyStats__WEBPACK_IMPORTED_MODULE_11__["default"])('https://covid19.mathdro.id/api/daily');
+  } = Object(_useDailyStats__WEBPACK_IMPORTED_MODULE_13__["default"])('https://covid19.mathdro.id/api/daily/');
 
   if (loading) {
     return __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
       size: "large",
+      style: {
+        textAlign: 'center'
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 13
       },
       __self: this
     });
   }
 
-  Object.entries(stats).filter(day => {
-    const dayNow = new Date().getDate();
-    const month = new Date().getMonth() + 1;
-
-    if (day[1].reportDateString === `2020/0${month}/${dayNow}`) {
-      setDailyStats(day[1]);
-    }
-  });
-  return __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_12___default.a.Fragment, null, __jsx(Title, {
+    level: 4,
+    style: {
+      textAlign: 'center',
+      marginTop: '2em'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Daily Summary"), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
     gutter: 32,
     style: {
       textAlign: 'center'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 22
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 23
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 24
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
     title: "Confirmed",
-    value: dailyStats === null || dailyStats === void 0 ? void 0 : dailyStats.deltaConfirmed,
+    value: stats === null || stats === void 0 ? void 0 : stats.deltaConfirmed,
     valueStyle: {
       color: '#c38755'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 25
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 32
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 33
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
     title: "Recovered",
-    value: dailyStats === null || dailyStats === void 0 ? void 0 : dailyStats.deltaRecovered,
+    value: stats === null || stats === void 0 ? void 0 : stats.deltaRecovered,
     valueStyle: {
       color: '#3f8600'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 34
     },
     __self: this
-  }))));
+  }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    span: 8,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    title: "Deaths",
+    value: stats === null || stats === void 0 ? void 0 : stats.mainlandChina,
+    valueStyle: {
+      color: '#cf1322'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  })))));
 }
 
 /***/ }),
@@ -551,6 +599,8 @@ function Global({
   stats,
   loading
 }) {
+  var _stats$confirmed, _stats$recovered, _stats$deaths;
+
   if (loading) {
     return __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
       size: "large",
@@ -587,7 +637,7 @@ function Global({
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
     title: "Confirmed",
-    value: stats.confirmed.value,
+    value: stats === null || stats === void 0 ? void 0 : (_stats$confirmed = stats.confirmed) === null || _stats$confirmed === void 0 ? void 0 : _stats$confirmed.value,
     valueStyle: {
       color: '#c38755'
     },
@@ -611,7 +661,7 @@ function Global({
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
     title: "Recovered",
-    value: stats.recovered.value,
+    value: stats === null || stats === void 0 ? void 0 : (_stats$recovered = stats.recovered) === null || _stats$recovered === void 0 ? void 0 : _stats$recovered.value,
     valueStyle: {
       color: '#3f8600'
     },
@@ -635,7 +685,7 @@ function Global({
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
     title: "Deaths",
-    value: stats.deaths.value,
+    value: stats === null || stats === void 0 ? void 0 : (_stats$deaths = stats.deaths) === null || _stats$deaths === void 0 ? void 0 : _stats$deaths.value,
     valueStyle: {
       color: '#cf1322'
     },
@@ -736,17 +786,7 @@ function useCountryStats(selected) {
   const {
     0: countryStats,
     1: setCountryStats
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    confirmed: {
-      value: 22
-    },
-    recovered: {
-      value: 22
-    },
-    deaths: {
-      value: 22
-    }
-  });
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     async function fetchData() {
       setLoading(true);
@@ -793,29 +833,26 @@ function useDailyStats(url) {
   const {
     0: stats,
     1: setStats
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    confirmed: {
-      value: 22
-    },
-    recovered: {
-      value: 22
-    },
-    deaths: {
-      value: 22
-    }
-  });
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+  const dayNow = new Date().getDate();
+  const month = new Date().getMonth() + 1;
+  const dateNow = `2020/0${month}/${dayNow}`;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     async function fetchData() {
       setLoading(true);
       setError(null);
       const data = await fetch(url).then(res => res.json()).catch(err => setError(err));
-      setStats(data);
+      data.map(day => {
+        if (day.reportDateString === dateNow) {
+          setStats(day);
+        }
+      });
       setLoading(false);
     }
 
     fetchData();
-    return () => {};
-  }, [url]);
+    return () => {}; // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return {
     loading,
     error,
@@ -850,17 +887,7 @@ function useStats(url) {
   const {
     0: stats,
     1: setStats
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    confirmed: {
-      value: 22
-    },
-    recovered: {
-      value: 22
-    },
-    deaths: {
-      value: 22
-    }
-  });
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     async function fetchData() {
       setLoading(true);
@@ -1020,7 +1047,7 @@ function Index() {
     },
     __self: this
   }, __jsx(Title, {
-    level: 3,
+    level: 4,
     style: {
       textAlign: 'center'
     },
@@ -1037,6 +1064,12 @@ function Index() {
       lineNumber: 18
     },
     __self: this
+  }), __jsx(_components_DailySummary__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
   }), __jsx(_components_CountryStat__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
@@ -1046,7 +1079,7 @@ function Index() {
   }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default.a, {
     id: "2173983531",
     __self: this
-  }, "@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');body{font-family:'Sen',sans-serif;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2ljb2RlL0NvZGViYXNlL1BlcnNvbmFsL05leHRqcy9jb3JvbmEtc3RhdHMvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUJnQyxBQUVnRixBQUd2Qyw2QkFDaEMiLCJmaWxlIjoiL2hvbWUvaWNvZGUvQ29kZWJhc2UvUGVyc29uYWwvTmV4dGpzL2Nvcm9uYS1zdGF0cy9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBUeXBvZ3JhcGh5IH0gZnJvbSAnYW50ZCc7XG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uL2NvbXBvbmVudHMvTXlMYXlvdXQnO1xuaW1wb3J0IHVzZVN0YXRzIGZyb20gJy4uL2NvbXBvbmVudHMvdXNlU3RhdHMnO1xuaW1wb3J0IENvdW50cnlTdGF0IGZyb20gJy4uL2NvbXBvbmVudHMvQ291bnRyeVN0YXQnO1xuaW1wb3J0IEdsb2JhbCBmcm9tICcuLi9jb21wb25lbnRzL0dsb2JhbCc7XG5pbXBvcnQgRGFpbHlTdW1tYXJ5IGZyb20gJy4uL2NvbXBvbmVudHMvRGFpbHlTdW1tYXJ5JztcblxuY29uc3QgeyBUaXRsZSB9ID0gVHlwb2dyYXBoeTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSW5kZXgoKSB7XG4gIGNvbnN0IHsgbG9hZGluZywgZXJyb3IsIHN0YXRzIH0gPSB1c2VTdGF0cygnaHR0cHM6Ly9jb3ZpZDE5Lm1hdGhkcm8uaWQvYXBpLycpO1xuICByZXR1cm4gKFxuICAgIDxMYXlvdXQ+XG4gICAgICA8VGl0bGUgbGV2ZWw9ezN9IHN0eWxlPXt7IHRleHRBbGlnbjogJ2NlbnRlcicgfX0+XG4gICAgICAgIENPVklELTE5IEdsb2JhbCBTdGF0c1xuICAgICAgPC9UaXRsZT5cbiAgICAgIDxHbG9iYWwgc3RhdHM9e3N0YXRzfSBsb2FkaW5nPXtsb2FkaW5nfSAvPlxuICAgICAgey8qIDxEYWlseVN1bW1hcnkgLz4gKi99XG4gICAgICA8Q291bnRyeVN0YXQgLz5cblxuICAgICAgPHN0eWxlIGpzeD1cInRydWVcIiBnbG9iYWw+e2BcbiAgICAgICAgQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1TZW4mZGlzcGxheT1zd2FwJyk7XG5cbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6ICdTZW4nLCBzYW5zLXNlcmlmO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9MYXlvdXQ+XG4gICk7XG59XG4iXX0= */\n/*@ sourceURL=/home/icode/Codebase/Personal/Nextjs/corona-stats/pages/index.js */"));
+  }, "@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');body{font-family:'Sen',sans-serif;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2ljb2RlL0NvZGViYXNlL1BlcnNvbmFsL05leHRqcy9jb3JvbmEtc3RhdHMvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUJnQyxBQUVnRixBQUd2Qyw2QkFDaEMiLCJmaWxlIjoiL2hvbWUvaWNvZGUvQ29kZWJhc2UvUGVyc29uYWwvTmV4dGpzL2Nvcm9uYS1zdGF0cy9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBUeXBvZ3JhcGh5IH0gZnJvbSAnYW50ZCc7XG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uL2NvbXBvbmVudHMvTXlMYXlvdXQnO1xuaW1wb3J0IHVzZVN0YXRzIGZyb20gJy4uL2NvbXBvbmVudHMvdXNlU3RhdHMnO1xuaW1wb3J0IENvdW50cnlTdGF0IGZyb20gJy4uL2NvbXBvbmVudHMvQ291bnRyeVN0YXQnO1xuaW1wb3J0IEdsb2JhbCBmcm9tICcuLi9jb21wb25lbnRzL0dsb2JhbCc7XG5pbXBvcnQgRGFpbHlTdW1tYXJ5IGZyb20gJy4uL2NvbXBvbmVudHMvRGFpbHlTdW1tYXJ5JztcblxuY29uc3QgeyBUaXRsZSB9ID0gVHlwb2dyYXBoeTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSW5kZXgoKSB7XG4gIGNvbnN0IHsgbG9hZGluZywgZXJyb3IsIHN0YXRzIH0gPSB1c2VTdGF0cygnaHR0cHM6Ly9jb3ZpZDE5Lm1hdGhkcm8uaWQvYXBpLycpO1xuICByZXR1cm4gKFxuICAgIDxMYXlvdXQ+XG4gICAgICA8VGl0bGUgbGV2ZWw9ezR9IHN0eWxlPXt7IHRleHRBbGlnbjogJ2NlbnRlcicgfX0+XG4gICAgICAgIENPVklELTE5IEdsb2JhbCBTdGF0c1xuICAgICAgPC9UaXRsZT5cbiAgICAgIDxHbG9iYWwgc3RhdHM9e3N0YXRzfSBsb2FkaW5nPXtsb2FkaW5nfSAvPlxuICAgICAgPERhaWx5U3VtbWFyeSAvPlxuICAgICAgPENvdW50cnlTdGF0IC8+XG5cbiAgICAgIDxzdHlsZSBqc3g9XCJ0cnVlXCIgZ2xvYmFsPntgXG4gICAgICAgIEBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9U2VuJmRpc3BsYXk9c3dhcCcpO1xuXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnU2VuJywgc2Fucy1zZXJpZjtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgIDwvTGF5b3V0PlxuICApO1xufVxuIl19 */\n/*@ sourceURL=/home/icode/Codebase/Personal/Nextjs/corona-stats/pages/index.js */"));
 }
 
 /***/ }),

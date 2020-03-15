@@ -3,11 +3,7 @@ import { useState, useEffect } from 'react';
 export default function useStats(url) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [stats, setStats] = useState({
-    confirmed: { value: 22 },
-    recovered: { value: 22 },
-    deaths: { value: 22 },
-  });
+  const [stats, setStats] = useState();
 
   useEffect(() => {
     async function fetchData() {
