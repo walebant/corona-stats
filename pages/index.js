@@ -24,6 +24,7 @@ export default function Index() {
 
         body {
           font-family: 'Sen', sans-serif;
+          overflow: hidden;
         }
       `}</style>
     </Layout>

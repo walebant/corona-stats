@@ -3,7 +3,7 @@ import { Divider } from 'antd';
 
 export default function Footer() {
   return (
-    <div style={{ marginTop: '4em' }}>
+    <div style={{ marginTop: '2em' }}>
       <Divider orientation="right" style={{ color: 'green', fontSize: '.9em' }}>
         by{' '}
         <a
