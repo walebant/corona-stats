@@ -20,7 +20,7 @@ export default function DailySummary() {
       </Title>
 
       <Row gutter={32} style={{ textAlign: 'center' }}>
-        <Col span={8}>
+        <Col span={12}>
           <Card>
             <Statistic
               title="Confirmed"
@@ -29,21 +29,12 @@ export default function DailySummary() {
             />
           </Card>
         </Col>
-        <Col span={8}>
+        <Col span={12}>
           <Card>
             <Statistic
               title="Recovered"
               value={stats?.deltaRecovered}
               valueStyle={{ color: '#3f8600' }}
-            />
-          </Card>
-        </Col>
-        <Col span={8}>
-          <Card>
-            <Statistic
-              title="Deaths"
-              value={stats?.mainlandChina}
-              valueStyle={{ color: '#cf1322' }}
             />
           </Card>
         </Col>

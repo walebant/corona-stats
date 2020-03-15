@@ -3,7 +3,7 @@ import Footer from './Footer';
 
 const layoutStyle = {
   marginLeft: 6,
-  marginTop: 30,
+  // marginTop: 30,
   justifyContent: 'center',
 };
 

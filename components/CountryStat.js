@@ -16,23 +16,24 @@ export default function CountryStat() {
   const handleChange = value => setSeleceted(value);
 
   return (
-    <div style={{ marginTop: '2em', textAlign: 'center' }}>
-      <Title level={4} style={{ textAlign: 'center' }}>
-        Stats for
-      </Title>
-      <Select
-        defaultValue={seleceted}
-        style={{ width: 200 }}
-        onChange={handleChange}
-      >
-        {stats?.countries &&
-          Object.entries(stats.countries).map((country, i) => (
-            <Option value={country[1]} key={i}>
-              {country[0]}
-            </Option>
-          ))}
-      </Select>
-
+    <div style={{ marginTop: '3em', textAlign: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <Title level={4} style={{ marginRight: '1em' }}>
+          In{' '}
+        </Title>
+        <Select
+          defaultValue={seleceted}
+          style={{ width: 200 }}
+          onChange={handleChange}
+        >
+          {stats?.countries &&
+            Object.entries(stats.countries).map((country, i) => (
+              <Option value={country[1]} key={i}>
+                {country[0]}
+              </Option>
+            ))}
+        </Select>
+      </div>
       {loading || (!countryStats && <Spin size="large" />)}
 
       {countryStats && (

@@ -180,7 +180,7 @@ function CountryStat() {
 
   return __jsx("div", {
     style: {
-      marginTop: '2em',
+      marginTop: '3em',
       textAlign: 'center'
     },
     __source: {
@@ -188,17 +188,27 @@ function CountryStat() {
       lineNumber: 19
     },
     __self: this
-  }, __jsx(Title, {
-    level: 4,
+  }, __jsx("div", {
     style: {
-      textAlign: 'center'
+      display: 'flex',
+      justifyContent: 'center'
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, "Stats for"), __jsx(antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default.a, {
+  }, __jsx(Title, {
+    level: 4,
+    style: {
+      marginRight: '1em'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "In", ' '), __jsx(antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default.a, {
     defaultValue: seleceted,
     style: {
       width: 200
@@ -206,7 +216,7 @@ function CountryStat() {
     onChange: handleChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, (stats === null || stats === void 0 ? void 0 : stats.countries) && Object.entries(stats.countries).map((country, i) => __jsx(Option, {
@@ -214,14 +224,14 @@ function CountryStat() {
     key: i,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
-  }, country[0]))), loading || !countryStats && __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
+  }, country[0])))), loading || !countryStats && __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
     size: "large",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }), countryStats && __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -231,20 +241,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -255,20 +265,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -279,20 +289,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -303,13 +313,13 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   })))), error && __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 72
     },
     __self: this
   }, error));
@@ -416,7 +426,7 @@ function DailySummary() {
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    span: 8,
+    span: 12,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -440,7 +450,7 @@ function DailySummary() {
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    span: 8,
+    span: 12,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
@@ -461,30 +471,6 @@ function DailySummary() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
-    },
-    __self: this
-  }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    span: 8,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    title: "Deaths",
-    value: stats === null || stats === void 0 ? void 0 : stats.mainlandChina,
-    valueStyle: {
-      color: '#cf1322'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
     },
     __self: this
   })))));
@@ -576,17 +562,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_statistic_style_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_statistic_style_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd/lib/statistic */ "antd/lib/statistic");
 /* harmony import */ var antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd/lib/spin/style/css */ "./node_modules/antd/lib/spin/style/css.js");
-/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/spin */ "antd/lib/spin");
-/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
+/* harmony import */ var antd_lib_divider_style_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd/lib/divider/style/css */ "./node_modules/antd/lib/divider/style/css.js");
+/* harmony import */ var antd_lib_divider_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_divider_style_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_divider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/divider */ "antd/lib/divider");
+/* harmony import */ var antd_lib_divider__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_divider__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/spin/style/css */ "./node_modules/antd/lib/spin/style/css.js");
+/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/spin */ "antd/lib/spin");
+/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
+
+
 
 
 
@@ -600,12 +592,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Global.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement;
 
 
 const {
   Title
-} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default.a;
+} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_13___default.a;
 function Global() {
   var _stats$confirmed, _stats$recovered, _stats$deaths;
 
@@ -613,10 +605,10 @@ function Global() {
     loading,
     error,
     stats
-  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_13__["default"])('https://covid19.mathdro.id/api/');
+  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_15__["default"])('https://covid19.mathdro.id/api/');
 
   if (loading) {
-    return __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    return __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_11___default.a, {
       size: "large",
       __source: {
         fileName: _jsxFileName,
@@ -626,17 +618,33 @@ function Global() {
     });
   }
 
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_12___default.a.Fragment, null, __jsx(Title, {
-    level: 4,
+  return __jsx("div", {
     style: {
-      textAlign: 'center'
+      marginTop: '10%'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    orientation: "left",
+    style: {
+      fontSize: '.9em'
     },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
-  }, "COVID-19 Global Stats"), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx(Title, {
+    level: 4,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, "\uD83E\uDDA0 COVID-19 Global Stats")), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
     gutter: 32,
     style: {
       textAlign: 'center'
@@ -665,6 +673,10 @@ function Global() {
     valueStyle: {
       color: '#c38755'
     },
+    style: {
+      position: 'relative',
+      left: '-5px'
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
@@ -674,13 +686,13 @@ function Global() {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -691,20 +703,20 @@ function Global() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -715,7 +727,7 @@ function Global() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   })))));
@@ -754,7 +766,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 const layoutStyle = {
   marginLeft: 6,
-  marginTop: 30,
+  // marginTop: 30,
   justifyContent: 'center'
 };
 function Layout(props) {

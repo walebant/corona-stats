@@ -1,5 +1,5 @@
 import React from 'react';
-import { Statistic, Card, Row, Col, Spin, Typography } from 'antd';
+import { Statistic, Card, Row, Col, Spin, Typography, Divider } from 'antd';
 import useStats from './useStats';
 
 const { Title } = Typography;
@@ -12,10 +12,10 @@ export default function Global() {
   }
 
   return (
-    <>
-      <Title level={4} style={{ textAlign: 'center' }}>
-        COVID-19 Global Stats
-      </Title>
+    <div style={{ marginTop: '10%' }}>
+      <Divider orientation="left" style={{ fontSize: '.9em' }}>
+        <Title level={4}>🦠 COVID-19 Global Stats</Title>
+      </Divider>
       <Row gutter={32} style={{ textAlign: 'center' }}>
         <Col span={8}>
           <Card>
@@ -23,6 +23,7 @@ export default function Global() {
               title="Confirmed"
               value={stats?.confirmed?.value}
               valueStyle={{ color: '#c38755' }}
+              style={{ position: 'relative', left: '-5px' }}
             />
           </Card>
         </Col>
@@ -47,6 +48,6 @@ export default function Global() {
           </Card>
         </Col>
       </Row>
-    </>
+    </div>
   );
 }
