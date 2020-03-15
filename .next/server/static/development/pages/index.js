@@ -580,8 +580,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/spin */ "antd/lib/spin");
 /* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
+
+
 
 
 
@@ -593,46 +600,63 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Global.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement;
 
-function Global({
-  stats,
-  loading
-}) {
+
+const {
+  Title
+} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default.a;
+function Global() {
   var _stats$confirmed, _stats$recovered, _stats$deaths;
+
+  const {
+    loading,
+    error,
+    stats
+  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_13__["default"])('https://covid19.mathdro.id/api/');
 
   if (loading) {
     return __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
       size: "large",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 6
+        lineNumber: 11
       },
       __self: this
     });
   }
 
-  return __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_12___default.a.Fragment, null, __jsx(Title, {
+    level: 4,
+    style: {
+      textAlign: 'center'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "COVID-19 Global Stats"), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
     gutter: 32,
     style: {
       textAlign: 'center'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 19
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 20
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 21
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -643,20 +667,20 @@ function Global({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 22
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 30
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 31
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -667,20 +691,20 @@ function Global({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 32
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 40
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 41
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -691,18 +715,18 @@ function Global({
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 42
     },
     __self: this
-  }))));
+  })))));
 }
 
 /***/ }),
 
-/***/ "./components/MyLayout.js":
-/*!********************************!*\
-  !*** ./components/MyLayout.js ***!
-  \********************************/
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -724,7 +748,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/MyLayout.js";
+var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
@@ -1007,79 +1031,51 @@ function useStats(url) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_MyLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/MyLayout */ "./components/MyLayout.js");
-/* harmony import */ var _components_useStats__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/useStats */ "./components/useStats.js");
-/* harmony import */ var _components_CountryStat__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/CountryStat */ "./components/CountryStat.js");
-/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
-/* harmony import */ var _components_DailySummary__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/DailySummary */ "./components/DailySummary.js");
-
-
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Global__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Global */ "./components/Global.js");
+/* harmony import */ var _components_CountryStat__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/CountryStat */ "./components/CountryStat.js");
+/* harmony import */ var _components_DailySummary__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/DailySummary */ "./components/DailySummary.js");
 var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/pages/index.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 
 
-
-const {
-  Title
-} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_1___default.a;
 function Index() {
-  const {
-    loading,
-    error,
-    stats
-  } = Object(_components_useStats__WEBPACK_IMPORTED_MODULE_5__["default"])('https://covid19.mathdro.id/api/');
-  return __jsx(_components_MyLayout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 10
     },
     __self: this
-  }, __jsx(Title, {
-    level: 4,
-    style: {
-      textAlign: 'center'
-    },
+  }, __jsx(_components_Global__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 11
     },
     __self: this
-  }, "COVID-19 Global Stats"), __jsx(_components_Global__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    stats: stats,
-    loading: loading,
+  }), __jsx(_components_DailySummary__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 12
     },
     __self: this
-  }), __jsx(_components_DailySummary__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }), __jsx(_components_CountryStat__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 13
     },
     __self: this
-  }), __jsx(_components_CountryStat__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "510862895",
     __self: this
-  }, "@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');body{font-family:'Sen',sans-serif;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2ljb2RlL0NvZGViYXNlL1BlcnNvbmFsL05leHRqcy9jb3JvbmEtc3RhdHMvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcUJnQyxBQUVnRixBQUd2Qyw2QkFDZCxnQkFDbEIiLCJmaWxlIjoiL2hvbWUvaWNvZGUvQ29kZWJhc2UvUGVyc29uYWwvTmV4dGpzL2Nvcm9uYS1zdGF0cy9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBUeXBvZ3JhcGh5IH0gZnJvbSAnYW50ZCc7XG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uL2NvbXBvbmVudHMvTXlMYXlvdXQnO1xuaW1wb3J0IHVzZVN0YXRzIGZyb20gJy4uL2NvbXBvbmVudHMvdXNlU3RhdHMnO1xuaW1wb3J0IENvdW50cnlTdGF0IGZyb20gJy4uL2NvbXBvbmVudHMvQ291bnRyeVN0YXQnO1xuaW1wb3J0IEdsb2JhbCBmcm9tICcuLi9jb21wb25lbnRzL0dsb2JhbCc7XG5pbXBvcnQgRGFpbHlTdW1tYXJ5IGZyb20gJy4uL2NvbXBvbmVudHMvRGFpbHlTdW1tYXJ5JztcblxuY29uc3QgeyBUaXRsZSB9ID0gVHlwb2dyYXBoeTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSW5kZXgoKSB7XG4gIGNvbnN0IHsgbG9hZGluZywgZXJyb3IsIHN0YXRzIH0gPSB1c2VTdGF0cygnaHR0cHM6Ly9jb3ZpZDE5Lm1hdGhkcm8uaWQvYXBpLycpO1xuICByZXR1cm4gKFxuICAgIDxMYXlvdXQ+XG4gICAgICA8VGl0bGUgbGV2ZWw9ezR9IHN0eWxlPXt7IHRleHRBbGlnbjogJ2NlbnRlcicgfX0+XG4gICAgICAgIENPVklELTE5IEdsb2JhbCBTdGF0c1xuICAgICAgPC9UaXRsZT5cbiAgICAgIDxHbG9iYWwgc3RhdHM9e3N0YXRzfSBsb2FkaW5nPXtsb2FkaW5nfSAvPlxuICAgICAgPERhaWx5U3VtbWFyeSAvPlxuICAgICAgPENvdW50cnlTdGF0IC8+XG5cbiAgICAgIDxzdHlsZSBqc3g9XCJ0cnVlXCIgZ2xvYmFsPntgXG4gICAgICAgIEBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9U2VuJmRpc3BsYXk9c3dhcCcpO1xuXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnU2VuJywgc2Fucy1zZXJpZjtcbiAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9MYXlvdXQ+XG4gICk7XG59XG4iXX0= */\n/*@ sourceURL=/home/icode/Codebase/Personal/Nextjs/corona-stats/pages/index.js */"));
+  }, "@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');body{font-family:'Sen',sans-serif;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2ljb2RlL0NvZGViYXNlL1BlcnNvbmFsL05leHRqcy9jb3JvbmEtc3RhdHMvcGFnZXMvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY2dDLEFBRWdGLEFBR3ZDLDZCQUNkLGdCQUNsQiIsImZpbGUiOiIvaG9tZS9pY29kZS9Db2RlYmFzZS9QZXJzb25hbC9OZXh0anMvY29yb25hLXN0YXRzL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcblxuaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL0xheW91dCc7XG5pbXBvcnQgR2xvYmFsIGZyb20gJy4uL2NvbXBvbmVudHMvR2xvYmFsJztcbmltcG9ydCBDb3VudHJ5U3RhdCBmcm9tICcuLi9jb21wb25lbnRzL0NvdW50cnlTdGF0JztcbmltcG9ydCBEYWlseVN1bW1hcnkgZnJvbSAnLi4vY29tcG9uZW50cy9EYWlseVN1bW1hcnknO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBJbmRleCgpIHtcbiAgcmV0dXJuIChcbiAgICA8TGF5b3V0PlxuICAgICAgPEdsb2JhbCAvPlxuICAgICAgPERhaWx5U3VtbWFyeSAvPlxuICAgICAgPENvdW50cnlTdGF0IC8+XG5cbiAgICAgIDxzdHlsZSBqc3g9XCJ0cnVlXCIgZ2xvYmFsPntgXG4gICAgICAgIEBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9U2VuJmRpc3BsYXk9c3dhcCcpO1xuXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiAnU2VuJywgc2Fucy1zZXJpZjtcbiAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgPC9MYXlvdXQ+XG4gICk7XG59XG4iXX0= */\n/*@ sourceURL=/home/icode/Codebase/Personal/Nextjs/corona-stats/pages/index.js */"));
 }
 
 /***/ }),
