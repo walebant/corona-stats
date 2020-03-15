@@ -1,11 +1,9 @@
 import React from 'react';
-import { Statistic, Card, Row, Col } from 'antd';
-import { ArrowUpOutlined } from '@ant-design/icons';
-import Loading from './Loading';
+import { Statistic, Card, Row, Col, Spin } from 'antd';
 
 export default function Global({ stats, loading }) {
   if (loading) {
-    return <Loading />;
+    return <Spin size="large" />;
   }
 
   return (

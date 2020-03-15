@@ -1,11 +1,11 @@
 import React from 'react';
+import { Divider } from 'antd';
 
 export default function Footer() {
   return (
-    <div>
-      <p style={{ textAlign: 'center', fontSize: '1.5em' }}>🧼👐🚰 🚫 🦠</p>
-      <p style={{ textAlign: 'right', color: 'green' }}>
-        by
+    <div style={{ marginTop: '4em' }}>
+      <Divider orientation="right" style={{ color: 'green', fontSize: '.9em' }}>
+        by{' '}
         <a
           target="__blank"
           href="https://twitter.com/wale_bant"
@@ -13,7 +13,7 @@ export default function Footer() {
         >
           @wale_bant
         </a>
-      </p>
+      </Divider>
     </div>
   );
 }

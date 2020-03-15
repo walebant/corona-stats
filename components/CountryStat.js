@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import { Statistic, Card, Row, Col, Select } from 'antd';
-import { ArrowUpOutlined } from '@ant-design/icons';
+import { Statistic, Card, Row, Col, Select, Spin } from 'antd';
 import useCountryStats from './useCountryStats';
 import useStats from './useStats';
-import Loading from './Loading';
 
 const { Option } = Select;
 
-console.log(Select);
 export default function CountryStat() {
   const [seleceted, setSeleceted] = useState('NG');
   const { loading, error, stats } = useStats(
@@ -33,7 +30,7 @@ export default function CountryStat() {
           ))}
       </Select>
 
-      {loading || (!countryStats && <Loading />)}
+      {loading || (!countryStats && <Spin size="large" />)}
 
       {countryStats && (
         <Row gutter={32} style={{ marginTop: '1em' }}>

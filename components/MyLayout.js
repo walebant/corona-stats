@@ -1,19 +1,16 @@
-import { Row, Col, Divider } from 'antd';
-import Header from './Header';
+import { Row, Col } from 'antd';
 import Footer from './Footer';
 
 const layoutStyle = {
-  // margin: 20,
-  padding: 10,
-  border: '1px solid #DDD',
+  marginLeft: 6,
+  marginTop: 30,
   justifyContent: 'center',
 };
 
 export default function Layout(props) {
   return (
     <Row gutter={32} style={layoutStyle}>
-      <Col className="gutter-row" span={16}>
-        {/* <Header /> */}
+      <Col className="gutter-row" span={32}>
         {props.children}
         <Footer />
       </Col>
