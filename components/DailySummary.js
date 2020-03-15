@@ -1,5 +1,6 @@
 import React from 'react';
-import { Statistic, Card, Row, Col, Spin, Typography } from 'antd';
+import { Statistic, Card, Row, Col, Typography } from 'antd';
+import Spinner from './Spinner';
 import useDailyStats from './useDailyStats';
 
 const { Title } = Typography;
@@ -10,7 +11,7 @@ export default function DailySummary() {
   );
 
   if (loading) {
-    return <Spin size="large" style={{ textAlign: 'center' }} />;
+    return <Spinner />;
   }
 
   return (

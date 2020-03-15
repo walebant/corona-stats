@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Statistic, Card, Row, Col, Select, Spin, Typography } from 'antd';
+import { Statistic, Card, Row, Col, Select, Typography } from 'antd';
+import Spinner from './Spinner';
 import useCountryStats from './useCountryStats';
 import useStats from './useStats';
 
@@ -34,7 +35,7 @@ export default function CountryStat() {
             ))}
         </Select>
       </div>
-      {loading || (!countryStats && <Spin size="large" />)}
+      {loading || (!countryStats && <Spinner />)}
 
       {countryStats && (
         <Row gutter={32} style={{ marginTop: '1em' }}>

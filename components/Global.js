@@ -1,6 +1,7 @@
 import React from 'react';
-import { Statistic, Card, Row, Col, Spin, Typography, Divider } from 'antd';
+import { Statistic, Card, Row, Col, Typography, Divider } from 'antd';
 import useStats from './useStats';
+import Spinner from './Spinner';
 
 const { Title } = Typography;
 
@@ -8,7 +9,7 @@ export default function Global() {
   const { loading, error, stats } = useStats('https://covid19.mathdro.id/api/');
 
   if (loading) {
-    return <Spin size="large" />;
+    return <Spinner />;
   }
 
   return (
@@ -23,7 +24,7 @@ export default function Global() {
               title="Confirmed"
               value={stats?.confirmed?.value}
               valueStyle={{ color: '#c38755' }}
-              style={{ position: 'relative', left: '-5px' }}
+              style={{ position: 'relative', left: '-12px' }}
             />
           </Card>
         </Col>

@@ -119,24 +119,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_statistic_style_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_statistic_style_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd/lib/statistic */ "antd/lib/statistic");
 /* harmony import */ var antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd/lib/spin/style/css */ "./node_modules/antd/lib/spin/style/css.js");
-/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/spin */ "antd/lib/spin");
-/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/select/style/css */ "./node_modules/antd/lib/select/style/css.js");
-/* harmony import */ var antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var antd_lib_select__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/select */ "antd/lib/select");
-/* harmony import */ var antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_select__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _useCountryStats__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./useCountryStats */ "./components/useCountryStats.js");
-/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
-
-
+/* harmony import */ var antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd/lib/select/style/css */ "./node_modules/antd/lib/select/style/css.js");
+/* harmony import */ var antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_select_style_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/select */ "antd/lib/select");
+/* harmony import */ var antd_lib_select__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_select__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _Spinner__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Spinner */ "./components/Spinner.js");
+/* harmony import */ var _useCountryStats__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./useCountryStats */ "./components/useCountryStats.js");
+/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
 
 
 
@@ -150,31 +145,32 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/CountryStat.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement;
+
 
 
 
 const {
   Title
-} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_13___default.a;
+} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default.a;
 const {
   Option
-} = antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default.a;
+} = antd_lib_select__WEBPACK_IMPORTED_MODULE_9___default.a;
 function CountryStat() {
   var _countryStats$confirm, _countryStats$recover, _countryStats$deaths;
 
   const {
     0: seleceted,
     1: setSeleceted
-  } = Object(react__WEBPACK_IMPORTED_MODULE_14__["useState"])('NG');
+  } = Object(react__WEBPACK_IMPORTED_MODULE_12__["useState"])('NG');
   const {
     loading,
     error,
     stats
-  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_16__["default"])('https://covid19.mathdro.id/api/countries');
+  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_15__["default"])('https://covid19.mathdro.id/api/countries');
   const {
     countryStats
-  } = Object(_useCountryStats__WEBPACK_IMPORTED_MODULE_15__["default"])(seleceted);
+  } = Object(_useCountryStats__WEBPACK_IMPORTED_MODULE_14__["default"])(seleceted);
 
   const handleChange = value => setSeleceted(value);
 
@@ -185,7 +181,7 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, __jsx("div", {
@@ -195,7 +191,7 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, __jsx(Title, {
@@ -205,10 +201,10 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
-  }, "In", ' '), __jsx(antd_lib_select__WEBPACK_IMPORTED_MODULE_11___default.a, {
+  }, "In", ' '), __jsx(antd_lib_select__WEBPACK_IMPORTED_MODULE_9___default.a, {
     defaultValue: seleceted,
     style: {
       width: 200
@@ -216,7 +212,7 @@ function CountryStat() {
     onChange: handleChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, (stats === null || stats === void 0 ? void 0 : stats.countries) && Object.entries(stats.countries).map((country, i) => __jsx(Option, {
@@ -224,14 +220,13 @@ function CountryStat() {
     key: i,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
-  }, country[0])))), loading || !countryStats && __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
-    size: "large",
+  }, country[0])))), loading || !countryStats && __jsx(_Spinner__WEBPACK_IMPORTED_MODULE_13__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }), countryStats && __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -241,20 +236,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -265,20 +260,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -289,20 +284,20 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -313,13 +308,13 @@ function CountryStat() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 64
     },
     __self: this
   })))), error && __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 73
     },
     __self: this
   }, error));
@@ -353,19 +348,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_statistic_style_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_statistic_style_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! antd/lib/statistic */ "antd/lib/statistic");
 /* harmony import */ var antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd/lib/spin/style/css */ "./node_modules/antd/lib/spin/style/css.js");
-/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/spin */ "antd/lib/spin");
-/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _useDailyStats__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./useDailyStats */ "./components/useDailyStats.js");
-
-
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _Spinner__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Spinner */ "./components/Spinner.js");
+/* harmony import */ var _useDailyStats__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./useDailyStats */ "./components/useDailyStats.js");
 
 
 
@@ -377,34 +367,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/DailySummary.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
+
 
 
 const {
   Title
-} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default.a;
+} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_9___default.a;
 function DailySummary() {
   const {
     loading,
     error,
     stats
-  } = Object(_useDailyStats__WEBPACK_IMPORTED_MODULE_13__["default"])('https://covid19.mathdro.id/api/daily/');
+  } = Object(_useDailyStats__WEBPACK_IMPORTED_MODULE_12__["default"])('https://covid19.mathdro.id/api/daily/');
 
   if (loading) {
-    return __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_9___default.a, {
-      size: "large",
-      style: {
-        textAlign: 'center'
-      },
+    return __jsx(_Spinner__WEBPACK_IMPORTED_MODULE_11__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 14
       },
       __self: this
     });
   }
 
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_12___default.a.Fragment, null, __jsx(Title, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_10___default.a.Fragment, null, __jsx(Title, {
     level: 4,
     style: {
       textAlign: 'center',
@@ -412,7 +399,7 @@ function DailySummary() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, "Daily Summary"), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -422,20 +409,20 @@ function DailySummary() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -446,20 +433,20 @@ function DailySummary() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 12,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -470,7 +457,7 @@ function DailySummary() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   })))));
@@ -566,19 +553,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_divider_style_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_divider_style_css__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var antd_lib_divider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! antd/lib/divider */ "antd/lib/divider");
 /* harmony import */ var antd_lib_divider__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_divider__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/spin/style/css */ "./node_modules/antd/lib/spin/style/css.js");
-/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/spin */ "antd/lib/spin");
-/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
-/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
-/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
-
-
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! antd/lib/typography/style/css */ "./node_modules/antd/lib/typography/style/css.js");
+/* harmony import */ var antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography_style_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! antd/lib/typography */ "antd/lib/typography");
+/* harmony import */ var antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(antd_lib_typography__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _useStats__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./useStats */ "./components/useStats.js");
+/* harmony import */ var _Spinner__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Spinner */ "./components/Spinner.js");
 
 
 
@@ -592,12 +574,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Global.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_12___default.a.createElement;
+
 
 
 const {
   Title
-} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_13___default.a;
+} = antd_lib_typography__WEBPACK_IMPORTED_MODULE_11___default.a;
 function Global() {
   var _stats$confirmed, _stats$recovered, _stats$deaths;
 
@@ -605,14 +588,13 @@ function Global() {
     loading,
     error,
     stats
-  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_15__["default"])('https://covid19.mathdro.id/api/');
+  } = Object(_useStats__WEBPACK_IMPORTED_MODULE_13__["default"])('https://covid19.mathdro.id/api/');
 
   if (loading) {
-    return __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_11___default.a, {
-      size: "large",
+    return __jsx(_Spinner__WEBPACK_IMPORTED_MODULE_14__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 12
       },
       __self: this
     });
@@ -624,7 +606,7 @@ function Global() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, __jsx(antd_lib_divider__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -634,14 +616,14 @@ function Global() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }, __jsx(Title, {
     level: 4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, "\uD83E\uDDA0 COVID-19 Global Stats")), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -651,20 +633,20 @@ function Global() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -675,24 +657,24 @@ function Global() {
     },
     style: {
       position: 'relative',
-      left: '-5px'
+      left: '-12px'
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -703,20 +685,20 @@ function Global() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }))), __jsx(antd_lib_col__WEBPACK_IMPORTED_MODULE_3___default.a, {
     span: 8,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }, __jsx(antd_lib_statistic__WEBPACK_IMPORTED_MODULE_7___default.a, {
@@ -727,7 +709,7 @@ function Global() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   })))));
@@ -765,8 +747,8 @@ var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components
 var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 const layoutStyle = {
-  marginLeft: 6,
-  // marginTop: 30,
+  marginLeft: 1,
+  marginRight: 1,
   justifyContent: 'center'
 };
 function Layout(props) {
@@ -793,6 +775,52 @@ function Layout(props) {
     },
     __self: this
   })));
+}
+
+/***/ }),
+
+/***/ "./components/Spinner.js":
+/*!*******************************!*\
+  !*** ./components/Spinner.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Spinner; });
+/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! antd/lib/spin/style/css */ "./node_modules/antd/lib/spin/style/css.js");
+/* harmony import */ var antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin_style_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd/lib/spin */ "antd/lib/spin");
+/* harmony import */ var antd_lib_spin__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_spin__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-jsx/style */ "styled-jsx/style");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+
+
+var _jsxFileName = "/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Spinner.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement;
+
+function Spinner() {
+  return __jsx("div", {
+    className: "jsx-3238335051" + " " + "spin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx(antd_lib_spin__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    id: "3238335051",
+    __self: this
+  }, ".spin{text-align:center;background:rgba(0,0,0,0.05);}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2ljb2RlL0NvZGViYXNlL1BlcnNvbmFsL05leHRqcy9jb3JvbmEtc3RhdHMvY29tcG9uZW50cy9TcGlubmVyLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVNnQyxBQUc2QixrQkFDYSw0QkFDakMiLCJmaWxlIjoiL2hvbWUvaWNvZGUvQ29kZWJhc2UvUGVyc29uYWwvTmV4dGpzL2Nvcm9uYS1zdGF0cy9jb21wb25lbnRzL1NwaW5uZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBTcGluIH0gZnJvbSAnYW50ZCc7XG5cbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFNwaW5uZXIoKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9XCJzcGluXCI+XG4gICAgICA8U3BpbiAvPlxuXG4gICAgICA8c3R5bGUganN4PVwidHJ1ZVwiIGdsb2JhbD57YFxuICAgICAgICAuc3BpbiB7XG4gICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgICAgICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC4wNSk7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbiAgKTtcbn1cbiJdfQ== */\n/*@ sourceURL=/home/icode/Codebase/Personal/Nextjs/corona-stats/components/Spinner.js */"));
 }
 
 /***/ }),
