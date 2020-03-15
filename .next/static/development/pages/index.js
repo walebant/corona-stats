@@ -403,7 +403,7 @@ function Footer() {
     orientation: "right",
     style: {
       color: 'green',
-      fontSize: '.9em'
+      fontSize: '1em'
     },
     __source: {
       fileName: _jsxFileName,
