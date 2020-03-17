@@ -9,10 +9,13 @@ export default function useStats(url) {
     async function fetchData() {
       setLoading(true);
       setError(null);
-      const data = await fetch(url)
-        .then(res => res.json())
-        .catch(err => setError(err));
-      setStats(data);
+      try {
+        const data = await fetch(url);
+        const response = await data.json();
+        setStats(response);
+      } catch (error) {
+        setError(error);
+      }
       setLoading(false);
     }
 

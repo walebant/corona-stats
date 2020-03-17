@@ -9,12 +9,15 @@ export default function useCountryStats(selected) {
     async function fetchData() {
       setLoading(true);
       setError(null);
-      const data = await fetch(
-        `https://covid19.mathdro.id/api/countries/${selected}`
-      )
-        .then(res => res.json())
-        .catch(err => setError(err));
-      setCountryStats(data);
+      try {
+        const data = await fetch(
+          `https://covid19.mathdro.id/api/countries/${selected}`
+        );
+        const response = await data.json();
+        setCountryStats(response);
+      } catch (error) {
+        setError(error);
+      }
       setLoading(false);
     }
 

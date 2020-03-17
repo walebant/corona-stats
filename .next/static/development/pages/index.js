@@ -756,31 +756,42 @@ function useCountryStats(selected) {
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     function fetchData() {
-      var data;
+      var data, response;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetchData$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               setLoading(true);
               setError(null);
-              _context.next = 4;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch("https://covid19.mathdro.id/api/countries/".concat(selected)).then(function (res) {
-                return res.json();
-              })["catch"](function (err) {
-                return setError(err);
-              }));
+              _context.prev = 2;
+              _context.next = 5;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch("https://covid19.mathdro.id/api/countries/".concat(selected)));
 
-            case 4:
+            case 5:
               data = _context.sent;
-              setCountryStats(data);
+              _context.next = 8;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(data.json());
+
+            case 8:
+              response = _context.sent;
+              setCountryStats(response);
+              _context.next = 15;
+              break;
+
+            case 12:
+              _context.prev = 12;
+              _context.t0 = _context["catch"](2);
+              setError(_context.t0);
+
+            case 15:
               setLoading(false);
 
-            case 7:
+            case 16:
             case "end":
               return _context.stop();
           }
         }
-      }, null, null, null, Promise);
+      }, null, null, [[2, 12]], Promise);
     }
 
     fetchData();
@@ -829,35 +840,46 @@ function useDailyStats(url) {
   var dateNow = "2020/0".concat(month, "/").concat(dayNow);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     function fetchData() {
-      var data;
+      var data, response;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetchData$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               setLoading(true);
               setError(null);
-              _context.next = 4;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch(url).then(function (res) {
-                return res.json();
-              })["catch"](function (err) {
-                return setError(err);
-              }));
+              _context.prev = 2;
+              _context.next = 5;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch(url));
 
-            case 4:
+            case 5:
               data = _context.sent;
-              data.map(function (day) {
+              _context.next = 8;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(data.json());
+
+            case 8:
+              response = _context.sent;
+              response.map(function (day) {
                 if (day.reportDateString === dateNow) {
                   setStats(day);
                 }
               });
+              _context.next = 15;
+              break;
+
+            case 12:
+              _context.prev = 12;
+              _context.t0 = _context["catch"](2);
+              setError(_context.t0);
+
+            case 15:
               setLoading(false);
 
-            case 7:
+            case 16:
             case "end":
               return _context.stop();
           }
         }
-      }, null, null, null, Promise);
+      }, null, null, [[2, 12]], Promise);
     }
 
     fetchData();
@@ -903,31 +925,42 @@ function useStats(url) {
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     function fetchData() {
-      var data;
+      var data, response;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function fetchData$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               setLoading(true);
               setError(null);
-              _context.next = 4;
-              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch(url).then(function (res) {
-                return res.json();
-              })["catch"](function (err) {
-                return setError(err);
-              }));
+              _context.prev = 2;
+              _context.next = 5;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(fetch(url));
 
-            case 4:
+            case 5:
               data = _context.sent;
-              setStats(data);
+              _context.next = 8;
+              return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(data.json());
+
+            case 8:
+              response = _context.sent;
+              setStats(response);
+              _context.next = 15;
+              break;
+
+            case 12:
+              _context.prev = 12;
+              _context.t0 = _context["catch"](2);
+              setError(_context.t0);
+
+            case 15:
               setLoading(false);
 
-            case 7:
+            case 16:
             case "end":
               return _context.stop();
           }
         }
-      }, null, null, null, Promise);
+      }, null, null, [[2, 12]], Promise);
     }
 
     fetchData();

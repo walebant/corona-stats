@@ -855,8 +855,15 @@ function useCountryStats(selected) {
     async function fetchData() {
       setLoading(true);
       setError(null);
-      const data = await fetch(`https://covid19.mathdro.id/api/countries/${selected}`).then(res => res.json()).catch(err => setError(err));
-      setCountryStats(data);
+
+      try {
+        const data = await fetch(`https://covid19.mathdro.id/api/countries/${selected}`);
+        const response = await data.json();
+        setCountryStats(response);
+      } catch (error) {
+        setError(error);
+      }
+
       setLoading(false);
     }
 
@@ -905,12 +912,19 @@ function useDailyStats(url) {
     async function fetchData() {
       setLoading(true);
       setError(null);
-      const data = await fetch(url).then(res => res.json()).catch(err => setError(err));
-      data.map(day => {
-        if (day.reportDateString === dateNow) {
-          setStats(day);
-        }
-      });
+
+      try {
+        const data = await fetch(url);
+        const response = await data.json();
+        response.map(day => {
+          if (day.reportDateString === dateNow) {
+            setStats(day);
+          }
+        });
+      } catch (error) {
+        setError(error);
+      }
+
       setLoading(false);
     }
 
@@ -956,8 +970,15 @@ function useStats(url) {
     async function fetchData() {
       setLoading(true);
       setError(null);
-      const data = await fetch(url).then(res => res.json()).catch(err => setError(err));
-      setStats(data);
+
+      try {
+        const data = await fetch(url);
+        const response = await data.json();
+        setStats(response);
+      } catch (error) {
+        setError(error);
+      }
+
       setLoading(false);
     }
 

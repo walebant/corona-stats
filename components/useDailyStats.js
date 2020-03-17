@@ -13,15 +13,18 @@ export default function useDailyStats(url) {
     async function fetchData() {
       setLoading(true);
       setError(null);
-      const data = await fetch(url)
-        .then(res => res.json())
-        .catch(err => setError(err));
+      try {
+        const data = await fetch(url);
+        const response = await data.json();
 
-      data.map(day => {
-        if (day.reportDateString === dateNow) {
-          setStats(day);
-        }
-      });
+        response.map(day => {
+          if (day.reportDateString === dateNow) {
+            setStats(day);
+          }
+        });
+      } catch (error) {
+        setError(error);
+      }
       setLoading(false);
     }
 
